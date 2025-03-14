@@ -1,0 +1,409 @@
+/* 모바일 */
+@media screen and (max-width: 480px) {
+    /* 헤더영역 */
+    #head {
+        min-width: 300px;
+        justify-content: space-around;
+    }
+    #head > a {
+        display: block;
+        width: 150px;
+    }
+    #head > a > img {
+        width: 100%;
+    }
+    #nav {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    .big_wrap {
+        height: 100vh;
+    }
+    #mob_nav {
+        font-size: 1rem;
+    }
+    /* 메인페이지 */
+    #page1 {
+        width: 85%;
+        margin: 0 auto;
+    }
+    #page1 > h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    #page1 > h3 {
+        font-size: 0.9rem;
+        letter-spacing: -1.3px;
+    }
+    #page1 > p {
+        font-size: 0.75rem;
+        letter-spacing: -2px;
+        margin-bottom: 50px;
+    }
+    /*2페이지*/
+    #bg_page2 {
+        height: fit-content;
+    }
+    #page2 {
+        width: 85%;
+        padding: 0;
+    }
+    #page2 > h2 {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        margin-bottom: 40px;
+    }
+    #pro_wrap {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        font-size: 0.65rem;
+        padding-bottom: 60px;
+    }
+    #pro_wrap > img {
+        width: 60%;
+    }
+    #pro_wrap p {
+        display: block;
+        max-width: 300px;
+        text-align: center;
+        letter-spacing: -0.3px;
+    }
+    #text_wrap {
+        grid-template-columns: 1fr;
+    }
+    #text_wrap h3 {
+        font-size: 1.15rem;
+        text-align: center;
+    }
+    #text_wrap span {
+        width: 10px;
+    }
+    #lisen > li:nth-child(2)::before, #lisen > li:nth-child(3)::before {
+        width: 60px;
+    }
+    /* 포폴영역 */
+    #hor {
+        width: 100vw;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .port_box {
+        height: 100%;
+        width: 85%;
+        padding: 0;
+        max-width: 300px;
+        flex-direction: column;
+        margin: 80px auto;
+    }
+    .port_text {
+        width: 100%;
+        height: 250px;
+        font-size: 0.7rem;
+        margin-bottom: 40px;
+    }
+    .port_text > h2 {
+        font-size: 1.4rem;
+        margin-bottom: 35px;
+    }
+    .port_text > p {
+        letter-spacing: -0.8px;
+    }
+    .button > a {
+        width: 49%;
+        height: 40px;
+        line-height: 40px;
+    }
+    .port_box img {
+        width: 100%;
+    }
+    /* footer */
+    #foo_wrap {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 0.7rem;
+        padding-top: 130px;
+        box-sizing: border-box;
+    }
+    #left > h2 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    #left > p {
+        font-size: 0.6rem;
+        margin-bottom: 40px;
+        letter-spacing: -0.8px;
+    }
+    #right {
+        width: 250px;
+    }
+    #bottom {
+        font-size: 0.5rem;
+        letter-spacing: -0.8px;
+        padding: 15px 0;
+    }
+}
+
+/* 태블릿 */
+@media (min-width: 481px) and (max-width: 768px) {
+   /* 헤더영역 */
+    #head {
+    min-width: 600px;
+    justify-content: space-around;
+   }
+   #head > a > img {
+    width: 150px;
+   }
+   /* 전체페이지 지정 */
+   .big_wrap {
+    width: 100%;
+    min-width: 500px;
+    height: 100vh;
+   }
+   /* mainpage */
+   #bg_page1 {
+    background-position: 0 500px;
+   }
+   #page1 > h1 {
+    font-size: 2.5rem;
+   }
+   #page1 > h3 {
+    font-size: 1.2rem;
+   }
+   #page1 > p {
+    font-size: 1rem;
+    letter-spacing: -0.8px;
+   }
+   /*profile page*/
+   #bg_page2 {
+    height: fit-content;
+    padding-bottom: 80px;
+   }
+   #page2 {
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 0;
+   }
+   #page2 > h2 {
+    padding-top: 40px;
+    font-size: 2rem;
+    margin-bottom: 25px;
+   }
+   #pro_wrap {
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 20px;
+   }
+   #pro_wrap > img {
+    width: 50%;
+   }
+   #pro_wrap p {
+    text-align: center;
+    font-size: 0.9rem;
+   }
+   #text_wrap {
+    grid-template-columns: 250px 330px;
+    gap: 30px 40px;
+   }
+   #text_wrap h3 {
+    font-size: 1.2rem;
+   }
+   #text_wrap span {
+    width: 18px;
+   }
+   #lisen > li:nth-child(2)::before, #lisen > li:nth-child(3)::before {
+    width: 68px;
+    }
+    /* port site */
+    #hor {
+        height: max-content;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .port_box {
+        width: 80%;
+        margin: 0 auto;
+        padding: 80px 0 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+    .port_box img {
+        width: 100%;
+    }
+    .port_text {
+        width: 100%;
+        height: 220px;
+        font-size: 0.8rem;;
+    }
+    .port_text > h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    .button {
+        width: 50%;
+        left: 305px;
+        bottom: 0;
+        gap: 2%;
+        justify-content: flex-end;
+    }
+    .button > a {
+        width: 49%;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /* footer */
+    #footer {
+        width: 100vw;
+        height: 100vh;
+    }
+    #foo_wrap {
+        width: 80%;
+        font-size: 0.7rem;
+    }
+    #left {
+        width: 50%;
+    }
+    #left > h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    #right {
+        width: 35%;
+        padding-top: 50px;
+    }
+    #right span {
+        width: 80px;
+    }
+}
+
+/* 노트북 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* 전체페이지 속성 */
+    body {
+        overflow: auto;
+    }
+    #page2, #foo_wrap {
+        width: 80%;
+    }
+    /* header */
+    #head {
+        width: 80%;
+        min-width: 800px;
+        max-width: 1000px;
+    }
+    /* page1 */
+    #page1 > h1 {
+        font-size: 3.4rem;
+    }
+    #page1 > h3 {
+        font-size: 1.6rem;
+    }
+    #page1 > p {
+        font-size: 1.2rem;
+    }
+    /* profile page2 */
+    #bg_page2 {
+        width: 100vw;
+        height: 100vh;
+    }
+    #page2 {
+        width: 80%;
+        margin: auto;
+        height: 100vh;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #page2 > h2 {
+        padding-top: 80px;
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+    }
+    #pro_wrap {
+        width: 100%;
+        gap: 4%;
+        font-size: 0.9rem;
+    }
+    #pro_wrap > img {
+        width: 25%;
+        max-width: 200px;
+    }
+    #pro_wrap p {
+        margin-bottom: 35px;
+        line-height: 1.4;
+        letter-spacing: -0.8px;
+    }
+    #text_wrap {
+        grid-template-columns: 240px 310px;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px 20px;
+        font-size: 0.8rem;
+    }
+    #text_wrap h3 {
+        font-size: 1.4rem;
+    }
+    #text_wrap span {
+        width: 10px;
+    }
+    #edu > li:first-child:not(span) {
+        letter-spacing: -0.8px;
+    } 
+
+    /* portfolio page */
+    #hor {
+        width: 200%;
+        justify-content: space-around;
+        padding: 0 4%;
+        box-sizing: border-box;
+        gap: 4%;
+    }
+    .port_box {
+        width: 50%;
+        padding: 0;
+        gap: 2%;
+    }
+    .port_box > img {
+        width: 60%;
+        min-width: 500px;
+    }
+    .port_text {
+        width: 38%;
+        font-size: 1rem;
+        height: 320px;
+    }
+    .port_text > h2 {
+        font-size: 2.4rem;
+        margin-bottom: 35px;
+    }
+    .port_text > p {
+        letter-spacing: -0.8px;
+    }
+    .button {
+        gap: 2%;
+    }
+    .button > a {
+        width: 49%;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /* footer */
+    #left {
+        font-size: 0.85rem;
+    }
+    #left > h2 {
+        font-size: 2.6rem;
+    }
+    #right {
+        width: 35%;
+        padding-top: 65px;
+        font-size: 0.85rem;
+    }
+}

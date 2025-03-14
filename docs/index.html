@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차승혜의 포트폴리오</title>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSS초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- CSS파일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+    <!-- 제이쿼리 & script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- GSAP 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js"></script>
+    <!-- ScrollTrigger 플러그인 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+   <header id="head">
+        <a href="#"><img id="logo" src="images/seung_logo1.png" alt="승승로고(녹)"></a>
+        <ul id="nav">
+            <li><a href="#bg_page2">PROFILE</a></li>
+            <li><a href="#hor">PORTFOLIO</a></li>
+            <li><a href="files/resume.pdf" target="_blank">RESUME</a></li>
+        </ul>
+        <div id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="mob_nav">
+            <li><a href="#bg_page2">PROFILE</a></li>
+            <li><a href="#hor">PORTFOLIO</a></li>
+            <li><a href="files/resume.pdf" target="_blank">RESUME</a></li>
+        </ul>
+   </header>
+   <!-- 1페이지(메인) -->
+   <section class="big_wrap" id="bg_page1">
+        <div id="page1">
+            <h1 class="reveal">
+                <span class="letter">DON'T DREAM, BE IT</span>
+            </h1>
+            <h3>
+                머릿속에서 꿈꾸던 것을 현실로,<br>
+                새로운 도전을 시작한 <span>웹 퍼블리셔 차승혜</span>입니다.
+            </h3>
+            <p>
+                다양한 시각적 경험과 소통하고자 하는 적극적인 자세로<br>
+                사용자의 요구에 맞춰 웹을 구축하기 위해 꾸준히 노력할 것입니다.
+            </p>
+        </div>
+   </section>
+   <!-- 2페이지(프로필) -->
+   <section id="bg_page2" class="big_wrap">
+    <div id="page2">
+        <h2>ABOUT ME</h2>
+        <div id="pro_wrap">
+            <img src="images/seung_1.png" alt="차승혜 프로필 사진">
+            <div>
+                <p>
+                    신입 웹 퍼블리셔 차승혜입니다. <br>
+                    배움에 누구보다 열심을 다하고, 적극적으로 소통하면서 꾸준히 소통하는 웹 퍼블리셔가 되겠습니다.
+                </p>
+                <div id="text_wrap">
+                    <div>
+                        <h3>PROFILE</h3>
+                        <ul id="pro">
+                            <li><span>NAME</span>차승혜</li>
+                            <li><span>BIRTH</span>1997.05.13</li>
+                            <li><span>PHONE</span>010-5027-8710</li>
+                            <li><span>MAIL</span>dnsdls1322@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>LISENCE</h3>
+                        <ul id="lisen">
+                            <li><span>2024</span>웹디자인기능사</li>
+                            <li>GTQ포토샵 1급</li>
+                            <li>ACP 포토샵·일러스트</li>
+                            <li><span>2023</span>한국사검정능력3급</li>
+                            <li><span>2020</span>정교사자격증 2급-미술</li>
+                            <li><span>2019</span>자동차운전면허 1종보통</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>SKILLS</h3>
+                        <ul id="skill">
+                            <li><img src="images/seung_2.png" alt="스킬_포토샵"></li>
+                            <li><img src="images/seung_2.png" alt="스킬_일러스트"></li>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>EDUCATION</h3>
+                        <ul id="edu">
+                            <li><span>2020</span>조선대학교미술대학 회화학과 서양화전공 졸업</li>
+                            <li><span>2016</span>여수부영여자고등학교 졸업</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+   </section>
+    <section id="hor" >
+        <!-- 3페이지(백남준)-->
+        <div class="port_box">
+            <div class="port_text">
+                <p>RESPONSIVE WEBSITE [PC]</p>
+                <h2>백남준 아트센터</h2>
+                <p class="explain">
+                    기존의 홈페이지와 비교하여 현대적인 디자인을 통해 현재 진행 중인 전시를 효과적으로 홍보하고,
+                    사용자들이 다양한 전시 프로그램들을 더욱 접근하기 용이한 UI 틀로 퍼블리싱 하는 것에 중점을 두어 작업했습니다.
+                </p>
+                <div class="button">
+                    <a href="files/artcenter_plan.pdf" target="_blank">기획안</a>
+                    <a href="https://seunghyecha.github.io/baekartcenter_0314/" target="_blank">미리 보기</a>
+                </div>
+            </div>
+            <img src="images/seung_10.jpg" alt="포트폴리오이미지_백남준아트센터">
+        </div>
+        <!-- 4페이지(여수백병원) -->
+        <div class="port_box">
+            <div class="port_text">
+                <p>ONETRUE LAYOUT WEBSITE [PC]</p>
+                <h2>여수백병원</h2>
+                <p class="explain">
+                    기존 홈페이지의 색상을 단일화하고 메뉴의 가짓수를 줄이고 사용자들이 정보를 더 빠르게 접근할 수 있도록 재구축했습니다.
+                    여수 백병원의 로고, 슬로건 등을 가져가면서도 색다른 디자인을 제시했으며 정보를 한눈에 볼 수 있도록 노력했습니다.
+                </p>
+                <div class="button">
+                    <a href="files/baekhospital_plan.pdf" target="_blank">기획안</a>
+                    <a href="https://seunghyecha.github.io/baekhospital_0307/" target="_blank">미리 보기</a>
+                </div>
+            </div>
+            <img src="images/seung_11.jpg" alt="포트폴리오이미지_여수백병원원">
+        </div>
+        <!-- 5페이지(클로버클로버)
+        <div class="big_wrap port_box">
+            <div class="port_text">
+                <p>RESPONSIVE WEBSITE [PC]</p>
+                <h2>클로버클로버</h2>
+                <p class="explain">
+                    젊은 여성들을 타깃으로 한 굿즈 쇼핑몰 사이트를 의뢰 제안서와 기획안 내용을 바탕으로 웹사이트를 구축했습니다.
+                    로고의 이미지를 참고하여 통통 튀는 밝은 에너지를 표현하고자 다양한 효과들을 넣으면서도 사용자들에게 접근성이 좋게끔 노력하였습니다.
+                </p>
+                <div class="button">
+                    <a href="#">기획안</a>
+                    <a href="#">미리 보기</a>
+                </div>
+            </div>
+            <img src="images/seung_12.jpg" alt="포트폴리오이미지_클로버클로버">
+        </div> -->
+    </section>
+    <div id="pop_artcenter">
+
+    </div>
+    <div id="pop_hospital">
+        
+    </div>
+    <!-- 푸터 -->
+    <section id="footer" class="big_wrap">
+        <div id="foo_wrap">
+            <div id="left">
+                <h2>
+                    <span>THANK YOU</span>
+                </h2>
+                <p>
+                저의 포트폴리오를 보러 와주셔서 감사합니다. <br>
+                저와 이야기를 나누고 싶다면 언제든 연락 남겨주세요. <br>
+                메일을 보내주신다면 최대한 빠른 시일 안에 답장 드리겠습니다.
+                </p>
+            </div>     
+            <ul id="right">
+                <li><span>EMAIL</span> dnsdls1322@gmail.com</li>
+                <li><span>PHONE</span> 010-5027-8710</li>
+                <li><span>RESUME</span><a href="files/resume.pdf" target="_blank">이력서 보러가기</a></li>
+            </ul>
+        </div>
+        <div id="bottom">
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+            <span>(C) 2024, seungseung.com All rights reserved</span>
+        </div>
+    </section>
+</body>
+</html>
